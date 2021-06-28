@@ -110,11 +110,12 @@ input:focus {
 .news p {
   color: var(--text);
   line-height: 32px;
+  font-size: 1.6rem;
 }
 
 .news h1 {
   color: var(--title);
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 400;
   
   padding-bottom: 10px;
@@ -138,7 +139,7 @@ input:focus {
 
 .date-like span {
   color: var(--text);
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .date-like img {
