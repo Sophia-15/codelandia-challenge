@@ -141,4 +141,105 @@ input:focus {
   font-size: 16px;
 }
 
+.date-like img {
+  cursor: pointer;
+}
 
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+
+  header {
+    height: 235px;
+  }
+
+  .search-bar input {
+    width: 70rem;
+    height: 60px;
+
+    background-size: 3rem;
+    background-position: 13px 15px;
+  }
+
+  .text-header {
+    width: 70rem;
+
+    padding-bottom: 65px;
+  }
+
+  .news{
+    width: 70rem;
+  }
+
+  .news:first-child {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 767px) {
+  html {
+    font-size: 58%;
+  }
+
+  header {
+    height: 220px;
+  }
+
+  .search-bar input {
+    width: 47rem;
+    height: 50px;
+    
+    background-size: 2.8rem;
+    background-position: 15px 12px;
+  }
+
+  .text-header {
+    width: 47rem;
+
+    padding-bottom: 60px;
+  }
+
+  .news{
+    width: 47rem;
+  }
+
+  .news:first-child {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width:320px) and (max-width: 481px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    height: 190px;
+  }
+
+  .search-bar input {
+    width: 32rem;
+    height: 40px;
+
+    background-size: 2.5rem;
+    background-position: 15px 9.5px;
+  }
+
+  .text-header {
+    width: 32rem;
+
+    padding-bottom: 50px;
+  }
+
+  .news{
+    width: 32rem;
+  }
+
+  .news:first-child {
+    margin-top: 45px;
+  }
+}
