@@ -3,6 +3,7 @@
   --blue: #3EA1DB;
   --blue-dark: #574AE8;
   --white: #FFF;
+  --background: #F3F5F7;
 
   --title: #313131;
   --text: #B6B6B6;
@@ -17,8 +18,12 @@
 
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background: #F3F5F7;
+  background: var(--background);
 }
 
 header {
@@ -35,8 +40,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 960px;
-  font-size: 24px;
+  max-width: 96rem;
+  width: 100%;
+  font-size: 2.4rem;
   color: var(--white);
   
   padding-top: 40px;
@@ -54,7 +60,8 @@ header {
 
 .search-bar input {
   padding: 0 50px;
-  width: 960px;
+  max-width: 96rem;
+  width: 100%;
 
   border: none;
   border-radius: 5px;
@@ -68,14 +75,14 @@ header {
   
   color: var(--white);
 
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 input::placeholder {
   color: var(--white);
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.5rem;
 
   opacity: 50%;
 }
@@ -94,7 +101,7 @@ input:focus {
 }
 
 .news{
-  width: 960px;
+  width: 96rem;
   max-width: 100%;
   height: auto;
 
