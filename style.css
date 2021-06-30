@@ -98,6 +98,7 @@ input:focus {
   flex-direction: column;
 
   gap: 50px;
+
 }
 
 .news{
@@ -112,6 +113,7 @@ input:focus {
  
   border-radius: 5px;
   font-family: 'Lexend Deca', sans-serif;
+  
 }
 
 .news p {
@@ -149,10 +151,16 @@ input:focus {
   font-size: 1.6rem;
 }
 
-.date-like img {
+.date-like i {
+  font-size: 24px;
+  color: var(--blue-dark);
+  
   cursor: pointer;
 }
 
+.date-like:hover {
+  opacity: 70%;
+}
 
 /*MEDIA QUERIES*/
 
