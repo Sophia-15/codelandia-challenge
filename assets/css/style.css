@@ -1,14 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend+Deca&display=swap');
+
 :root {
   --blue: #3EA1DB;
+  --span: #B6B6B6;
   --blue-dark: #574AE8;
+  --heart: #574AE8;
   --white: #FFF;
+  --card: #FFF;
+  --text-header: #FFF;
   --background: #F3F5F7;
 
   --title: #313131;
   --text: #B6B6B6;
   
   --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+[data-theme= "dark"] {
+  --blue: #3EA1DB;
+  --span: #3EA1DB;
+  --heart: #3EA1DB;
+  --blue-dark: #574AE8;
+  --white: #FFF;
+  --card: #202020;
+  --text-header: #574AE8;
+  --background: #181818;
+
+  --title: #FFF;
+  --text: #E5E5E5;
+  
+  --linear: #202020;
 }
 
 * {
@@ -26,14 +47,14 @@ body {
   background: var(--background);
 }
 
+/*HEADER*/
+
 header {
   width: 100%;
   height: 250px;
   background: var(--linear);
   font-family: 'Lexend Deca', sans-serif;
 }
-
-
 
 .text-header {
   margin: 0 auto;
@@ -43,10 +64,10 @@ header {
   max-width: 96rem;
   width: 100%;
   font-size: 2.4rem;
-  color: var(--white);
+  color: var(--text-header);
   
   padding-top: 40px;
-  padding-bottom: 75px;
+  padding-bottom: 60px;
 
   font-weight: 400;
 }
@@ -69,13 +90,14 @@ header {
   height: 65px;
   background: rgba(255, 255, 255, 0.2);
 
-  background-image: url(assets/lupa.svg);
+  background-image: url(../img/lupa.svg);
   background-repeat: no-repeat ;
-  background-position: 10px 16px;
+  background-position: 10px, 16px;
   
   color: var(--white);
 
   font-size: 1.5rem;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 input::placeholder {
@@ -91,13 +113,20 @@ input:focus {
   outline: none;
 }
 
+.theme {
+  font-size: 2.4rem;
+  cursor: pointer;
+
+  color: var(--text-header);
+}
+
+/*NEWS SECTION*/
+
 .news-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-
-  gap: 50px;
 
 }
 
@@ -106,14 +135,16 @@ input:focus {
   max-width: 100%;
   height: auto;
 
- 
-  background: var(--white);
+ cursor: pointer;
+
+  background: var(--card);
   padding: 25px;
   box-shadow: 0px 0px 10px 0px #13131F0D;
  
   border-radius: 5px;
   font-family: 'Lexend Deca', sans-serif;
   
+  margin-top: 50px;
 }
 
 .news p {
@@ -144,23 +175,51 @@ input:focus {
   justify-content: space-between;
 
   padding-bottom: 20px;
+
+  overflow: hidden;
 }
 
 .date-like span {
-  color: var(--text);
+  color: var(--span);
   font-size: 1.6rem;
 }
 
 .date-like i {
   font-size: 24px;
-  color: var(--blue-dark);
+  color: var(--heart);
   
   cursor: pointer;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.date-like:hover {
-  opacity: 70%;
+.date-like i:hover {
+  opacity: 50%;
 }
+
+/*SCROLL BAR STYLE*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background:#3321ff ;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-dark);
+}
+
+
+
 
 /*MEDIA QUERIES*/
 
