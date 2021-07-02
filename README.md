@@ -1,6 +1,6 @@
 # Codelândia
 <p align="center">
-	<img src="https://i.imgur.com/RjUNlyv.png" alt="Codelândia" title="Codelândia">
+	<img src="https://user-images.githubusercontent.com/67246528/124210971-c1828880-dac2-11eb-8234-439bae1c8bc5.gif" alt="Codelândia" title="Codelândia">
 </p>
 
 ## Sobre   
