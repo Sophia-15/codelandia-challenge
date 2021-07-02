@@ -4,7 +4,7 @@
 </p>
 
 ## Sobre   
-Este projeto foi desenvolvido para o primeiro desafio da comunidade **[Codelândia](https://discord.com/invite/QevDJqCzaY)**. O objetivo dele era **praticar Front-end** desenvolvendo um simples blog de notícias **semântico** e **responsivo**. Também foi implementado uma pequena **animação de curtida** e um **sistema de busca de notícia** pelo nome na barra de pesquisa.
+Este projeto foi desenvolvido para o primeiro desafio da comunidade **[Codelândia](https://discord.com/invite/QevDJqCzaY)**. O objetivo dele era **praticar Front-end** desenvolvendo um simples blog de notícias **semântico** e **responsivo**. Também foi implementado uma pequena **animação de curtida** e um **sistema de busca de notícia** pelo nome na barra de pesquisa. Clique [aqui](https://sophia-15.github.io/codelandia-challenge/) para testar.
 
 ---
 
