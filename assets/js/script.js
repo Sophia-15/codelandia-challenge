@@ -20,7 +20,7 @@ for (let like of likes){
 }
 
 search.onkeyup = function() {
-  let searchValue = search.value;
+  let searchValue = search.value.toLowerCase();
   for (let i = 0; i < news.length; i++) {
       let titleContain = title[i].innerText;
       let results = titleContain.toLowerCase().indexOf(searchValue) >= 0;
